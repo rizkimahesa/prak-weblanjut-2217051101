@@ -44,7 +44,7 @@
 
 <body>
     <div class="profile-container">
-        <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/94d795777116652279c4de73ba19976639c12f5d-1920x1080.jpg?auto=format&fit=fill&q=80&w=1082" alt="Spidermine">
+    <img src="{{ asset('assets/img/GTR R35.jpeg') }}" alt="mobil">
         <div class="info">
             <strong>Nama:</strong> <?= $nama ?>
         </div>
