@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WLTugas2</title>
+    <title>Profile User</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -39,6 +39,7 @@
             padding: 10px;
             border-radius: 5px;
         }
+        
     </style>
 </head>
 
@@ -49,7 +50,7 @@
             <strong>Nama:</strong> <?= $nama ?>
         </div>
         <div class="info">
-            <strong>Kelas:</strong> <?= $kelas ?>
+            <strong>Kelas:</strong> <?= $nama_kelas ?? 'Kelas tidak ditemukan' ?>
         </div>
         <div class="info">
             <strong>NPM:</strong> <?= $npm ?>
