@@ -16,6 +16,15 @@ form {
     width: 300px;
 }
 
+.form-container {
+    background-color: #f0f8ff;
+    padding: 50px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+}
+
 label {
     display: block;
     font-weight: bold;
