@@ -17,44 +17,59 @@
         }
 
         .profile-container {
-            text-align: left;
             background-color: #00BFFF;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 300px;
+            text-align: center;
         }
 
         .profile-container img {
-            width: 100px;
-            height: 100px;
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
             margin-bottom: 20px;
-            display: block;
-            margin: 0 auto;
-}
+            object-fit: cover;
+        }
 
         .profile-container .info {
-            background-color: #ddd;
+            background-color: #f0f0f0;
             margin: 10px 0;
             padding: 10px;
             border-radius: 5px;
+            width: 100%;
+            text-align: left;
+            font-size: 16px;
         }
-        
+
+        .profile-container .info strong {
+            color: #333;
+        }
+
+        .profile-container .info span {
+            margin-left: 10px;
+            color: #555;
+        }
     </style>
 </head>
 
 <body>
     <div class="profile-container">
-    <img src="{{ asset('assets/img/GTR R35.jpeg') }}" alt="mobil">
+    <img src="{{ asset('upload/img/' . $user->foto) }}" alt="foto-profile">
         <div class="info">
-            <strong>Nama:</strong> <?= $nama ?>
+            <strong>Nama:</strong> <?= $user->nama?>
         </div>
         <div class="info">
-            <strong>Kelas:</strong> <?= $nama_kelas ?? 'Kelas tidak ditemukan' ?>
+            <strong>Kelas:</strong> <?= $user->nama_kelas ?? 'Kelas tidak ditemukan' ?>
         </div>
         <div class="info">
-            <strong>NPM:</strong> <?= $npm ?>
+            <strong>NPM:</strong> <?= $user->npm ?>
         </div>
+    </div>
     </div>
 </body>
 
