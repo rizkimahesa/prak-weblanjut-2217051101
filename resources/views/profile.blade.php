@@ -59,7 +59,7 @@
 
 <body>
     <div class="profile-container">
-    <img src="{{ asset('upload/img/' . $user->foto) }}" alt="foto-profile">
+    <img src="{{ asset($user->foto) }}" alt="foto-profile">
         <div class="info">
             <strong>Nama:</strong> <?= $user->nama?>
         </div>
