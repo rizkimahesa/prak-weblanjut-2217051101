@@ -69,6 +69,7 @@
         <div class="info">
             <strong>NPM:</strong> <?= $user->npm ?>
         </div>
+        <button class="bg-red-300 flex w-1/3 font-semibold text-gray-700 text-center rounded-lg"><a href="/user" class="w-full">< Back</a></button>
     </div>
     </div>
 </body>
