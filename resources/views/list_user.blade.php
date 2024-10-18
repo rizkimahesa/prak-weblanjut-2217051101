@@ -41,11 +41,11 @@
 
 <style>
     .user-photo {
-        width: 50%; /* Sesuaikan persentase untuk ukuran gambar */
-        height: auto; /* Agar proporsi tetap terjaga */
-        max-width: 150px; /* Batas maksimal lebar gambar */
-        border-radius: 5px; /* Sudut membulat opsional */
-        object-fit: cover; /* Memastikan gambar memenuhi area tanpa distorsi */
+        width: 50%;
+        height: auto;
+        max-width: 150px;
+        border-radius: 5px;
+        object-fit: cover;
     }
 </style>
 @endsection
